@@ -8,6 +8,9 @@ pipeline {
     options {
         skipStagesAfterUnstable()
     }
+    environment {
+        DOCKERHUB_CREDENTIALS = credentials('dockerhub')
+    }
     stages {
         stage('Build') {
             steps {
