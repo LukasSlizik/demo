@@ -35,7 +35,7 @@ pipeline {
         }
         stage('Push') {
             steps {
-                sh 'docker push lukasslizik/jenkins-docker-hub'
+                sh 'sudo docker push lukasslizik/jenkins-docker-hub'
             }
         }
     }
