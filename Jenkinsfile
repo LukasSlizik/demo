@@ -33,5 +33,10 @@ pipeline {
                 sh 'echo $DOCKERHUB_CREDENTIALS_PSW | sudo docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
             }
         }
+        stage('Push') {
+            steps {
+                sh 'docker push lukasslizik/jenkins-docker-hub'
+            }
+        }
     }
 }
