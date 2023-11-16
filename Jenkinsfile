@@ -35,7 +35,7 @@ pipeline {
         }
         stage('Push') {
             steps {
-                sh 'sudo docker push lukasslizik/java-docker:latest'
+                sh 'sudo docker push java-docker'
             }
         }
     }
