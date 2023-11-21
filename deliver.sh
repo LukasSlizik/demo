@@ -25,5 +25,5 @@ echo 'application (which Jenkins built using Maven) to the Jenkins UI.'
 set -x
 #java -jar target/${NAME}-${VERSION}.jar
 
-sudo docker build --tag java-docker .
+sudo docker build --tag lukasslizik/java-docker .
 
