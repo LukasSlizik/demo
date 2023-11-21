@@ -30,7 +30,8 @@ pipeline {
         }
         stage('Login') {
             steps {
-                sh 'echo $DOCKERHUB_CREDENTIALS_PSW | sudo docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
+                // sh 'echo $DOCKERHUB_CREDENTIALS_PSW | sudo docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
+                sh 'sudo docker login -u lukas.slizik@gmail.com -p 'k]v9&#3RYCaZx.b$q<e%rS''
             }
         }
         stage('Push') {
