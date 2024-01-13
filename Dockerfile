@@ -13,4 +13,4 @@ RUN ./mvnw dependency:resolve
 COPY src ./src
 
 CMD ["./mvnw", "spring-boot:run"]
-EXPOSE 8090
+EXPOSE 8080
